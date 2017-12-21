@@ -1,0 +1,67 @@
+// export const EXPECTED_STR = "Fuck fucking fucked fucker fucking fuckups fuck fucking fucked fucking fuckup fucking fucker's fucking fuckup.";
+export const EXPECTED_STR = "Salut salut ! C'est moi !";
+export const CHANCE_TO_MUTATE = 0.1;
+export const GRADED_RETAIN_PERCENT = 0.2;
+export const CHANCE_RETAIN_NONGRATED = 0.05;
+export const POPULATION_COUNT = 200;
+export const GENERATION_COUNT_MAX = 100000;
+export const GRADED_INDIVIDUAL_RETAIN_COUNT = Math.ceil(POPULATION_COUNT * GRADED_RETAIN_PERCENT);
+export const LENGTH_OF_EXPECTED_STR = EXPECTED_STR.length;
+export const MIDDLE_LENGTH_OF_EXPECTED_STR = Math.ceil(LENGTH_OF_EXPECTED_STR / 2);
+export const ALLOWED_CHARMAP = [' ',
+  '!',
+  '\'',
+  '.',
+  'a',
+  'b',
+  'c',
+  'd',
+  'e',
+  'f',
+  'g',
+  'h',
+  'i',
+  'j',
+  'k',
+  'l',
+  'm',
+  'n',
+  'o',
+  'p',
+  'q',
+  'r',
+  's',
+  't',
+  'u',
+  'v',
+  'x',
+  'y',
+  'z',
+  'A',
+  'B',
+  'C',
+  'D',
+  'E',
+  'F',
+  'G',
+  'H',
+  'I',
+  'J',
+  'K',
+  'L',
+  'M',
+  'N',
+  'O',
+  'P',
+  'Q',
+  'R',
+  'S',
+  'T',
+  'U',
+  'V',
+  'W',
+  'X',
+  'Y',
+  'Z',
+];
+export const MAXIMUM_FITNESS = LENGTH_OF_EXPECTED_STR;
