@@ -62,9 +62,9 @@ export class Ga extends Component {
       solution = evolvePopulationResult.solution;
       averageGrade = evolvePopulationResult.averageGrade;
 
-      // if (i % 255 === 1) {
+      if (i % 10 === 1) {
         this.log(`Current grade: ${averageGrade} / ${GaConstants.MAXIMUM_FITNESS} (generation ${i})`);
-      // }
+      }
 
       i += 1;
     }
