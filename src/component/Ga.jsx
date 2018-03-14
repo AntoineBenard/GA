@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import * as GaConstants from './../constants/GaConstants';
 import { getRandomPopulation, getAveragePopulationGrade, evolvePopulation, getFinalSolution } from './../GaFunctions/GaFunctions';
+import Logger from './Logger';
 
 export class Ga extends Component {
   constructor(props) {
@@ -98,13 +99,8 @@ export class Ga extends Component {
         <input type="text" value={this.state.expectedString} onChange={this.handleOnChange} />
           <button onClick={this.main}>GO !</button>
         </div>
-        <div>
-          {this.state.logs.map(log =>
-            (<div key={log.line}>
-              {log.value}
-            </div>))
-          }
-        </div>
+
+        <Logger viewLineNumber logs={this.state.logs} />
       </div>
     );
   }

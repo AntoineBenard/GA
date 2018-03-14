@@ -5,9 +5,11 @@
   "dependencies": {
     "eslint": "^4.13.1",
     "eslint-config-airbnb": "^16.1.0",
+    "prop-types": "^15.6.1",
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "react-test-renderer": "^16.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
